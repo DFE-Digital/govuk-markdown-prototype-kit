@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+compile '/index.gs' do
+  filter :govspeak
+  layout '/default.*'
+  write '/index.html'
+end
+
+compile '/**/*.slim' do
+  filter :slim
+  layout '/default.*'
+  write item.identifier.without_ext + '/index.html'
+end
+
+compile '/**/*.gs' do
+  filter :govspeak
+  layout '/default.*'
+  write item.identifier.without_ext + '/index.html'
+end
+
+%w(woff woff2).each do |ext|
+  compile("/**/*.#{ext}") do
+    write '/assets/fonts/' + File.basename(item.identifier.to_s)
+  end
+end
+
+# Ignore govuk styles, we'll @import them
+ignore '/css/govuk/**/*'
+ignore '/**/_*.scss'
+
+compile '/**/*.scss' do
+  filter :sassc, syntax: :scss, style: :compressed, load_paths: %w(content/css/)
+  snapshot :css
+  write item.identifier.without_ext + '.css'
+end
+
+compile '/**/*' do
+  write item.identifier.to_s
+end
+
+layout '/**/*', :slim

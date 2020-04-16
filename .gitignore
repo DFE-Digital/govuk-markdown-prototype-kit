@@ -1,0 +1,4 @@
+output/
+tmp/
+node_modules/
+crash.log

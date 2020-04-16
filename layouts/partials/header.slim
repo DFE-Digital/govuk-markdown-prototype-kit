@@ -1,0 +1,18 @@
+a.govuk-skip-link href="#main-content"
+  | Skip to main content
+
+header.govuk-header role='banner' data-module='govuk-header'
+  .govuk-header__container.govuk-width-container
+    .govuk-header__logo
+      a.govuk-header__link.govuk-header__link--homepage href="/"
+        span.govuk-header__logotype
+          == render '/partials/crown.*'
+
+        span.govuk-header__logotype-text
+          | GOV.UK
+
+    .govuk-header__content
+      == link_to('Govspeak Prototype',                               \
+        '/',                                                         \
+        class: 'govuk-header__link govuk-header__link--service-name' \
+      )

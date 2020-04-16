@@ -1,0 +1,22 @@
+{
+  "name": "govspeak-prototype",
+  "version": "0.0.1",
+  "description": "Govspeak-enabled prototyping toolkit",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "govspeak",
+    "govuk",
+    "prototype"
+  ],
+  "author": "Peter Yates",
+  "license": "MIT",
+  "dependencies": {
+    "govuk-frontend": "^3.6.0"
+  }
+}
