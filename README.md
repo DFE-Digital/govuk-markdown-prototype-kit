@@ -5,6 +5,12 @@ intended to be published via the [Whitehall Publisher](https://www.gov.uk/guidan
 
 It uses [Nanoc](https://nanoc.ws/), a static site generator written in Ruby.
 
+## What is govspeak?
+
+[Govspeak](https://github.com/alphagov/govspeak) is a simplified 'markup'
+language based on [Markdown](https://commonmark.org/). It's designed to be as
+[easy-to-read and easy-to-write](https://govspeak-preview.herokuapp.com/guide)
+as possible.
 
 ## Requirements
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/#homebrew)
