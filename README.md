@@ -21,6 +21,6 @@ If that succeeded, we can start the app and have it live reload our changes:
 $ bundle exec nanoc live
 ```
 
-Navigate to `https://localhost:3000` and if you see this, it worked!
+Navigate to `http://localhost:3000` and if you see this, it worked!
 
 ![home page](docs/sample.png)
