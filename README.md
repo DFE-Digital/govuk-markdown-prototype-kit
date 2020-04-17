@@ -16,7 +16,7 @@ as possible.
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/#homebrew)
 - [NPM](https://www.npmjs.com/get-npm)
 
-## Getting going
+## Getting started
 
 Clone this app, `cd` to the repo's root directory and run:
 
@@ -36,21 +36,48 @@ Navigate to `http://localhost:3000` and if you see this, it worked!
 ![home page](docs/sample.png)
 
 ## Adding content
-Pages and assets are stored in the `content/` directory.  
-Pages written in [govspeak](https://govspeak-preview.herokuapp.com/guide) must
-have the extension `.gs`.
 
-To add a new page create a `.gs` file in the `content` directory, eg
-`content/example.gs`, the page will now be available at `http://localhost:3000/example`.  
+To add a new page create a `.gs` file in the `content` directory,
+`content/example.gs` for example. The page will now be visible at
+`http://localhost:3000/example`.
 
-The `.gs` templates may contain metadata using `yaml` syntax.  
-To add a page title add the following to the top of your `.gs` template.
+For consistency, keep your filenames lower case, avoid non-alphanumeric characters and use
+dashes instead of spaces.
 
-```yaml
+### Frontmatter
+
+Frontmatter is a block of YAML at the top of a file that contains metadata. By
+default, this app only makes use of the title, but any structured data can
+added.
+
+```
 ---
-title: "An example title"
+title: "My amazing page"
 ---
 ```
-This will also generate breadcrumbs linking back to the index page.  
+
 View the included index file `content/index.gs` for an example of using
 metadata in a govspeak template.
+
+### Nesting pages
+
+A hierarchy of content can be created using directories. Each directory should have
+a corresponding index, so the `hello/` directory should be placed alongside `hello.gs`.
+
+| File                                | Path                                           |
+| ----                                | ----                                           |
+| `content/hello.gs`                  | `http://localhost:3000/hello`                  |
+| `content/hello/world.gs`            | `http://localhost:3000/hello/world`            |
+| `content/hello/nice-to-meet-you.gs` | `http://localhost:3000/hello/nice-to-meet-you` |
+
+Routing and breadcrumbs are automatically handled.
+
+### Level one headings (or lack thereof)
+
+Govspeak [does not support level one
+headings](https://govspeak-preview.herokuapp.com/guide#Headings) by choice. The
+document's title will be displayed in a `<h1>` tag at the top of the page, all
+subsequent headings should be `<h2>`-`<h6>`.
+
+The default styling for additional `<h1>` tags is intentionally ugly to
+discourage their use.
