@@ -4,6 +4,12 @@
     .govuk-breadcrumbs__list
       - breadcrumbs_trail.each do |ancestor|
         li.govuk-breadcrumbs__list-item
-          == link_to_unless_current(ancestor[:title],         \
-              ancestor.path, class: 'govuk-breadcrumbs__link' \
-            ).html_safe
+          - if ancestor
+            - if ancestor[:name]
+              == link_to_unless_current(ancestor[:title],         \
+                  ancestor.path, class: 'govuk-breadcrumbs__link' \
+                ).html_safe
+            - else
+              | Title missing
+          - else
+            | Page missing
