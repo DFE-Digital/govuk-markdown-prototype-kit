@@ -24,15 +24,14 @@ end
   end
 end
 
-# Ignore govuk styles, we'll @import them
-ignore '/css/govuk/**/*'
-ignore '/**/_*.scss'
-
-compile '/**/*.scss' do
-  filter :sassc, syntax: :scss, style: :compressed, load_paths: %w(content/css/)
+# only compile application.scss, everything we need will
+# be @included from there
+compile '/css/application.scss' do
+  filter :sassc, syntax: :scss, style: :compact, load_paths: %w(content/css/)
   snapshot :css
-  write item.identifier.without_ext + '.css'
+  write '/css/application.css'
 end
+ignore '/css/**/*.scss'
 
 compile '/**/*' do
   write item.identifier.to_s
