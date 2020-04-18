@@ -245,3 +245,33 @@ main {
   padding: 1em 2em;
   width: max-content;
 }
+
+.steps {
+  counter-reset: circle-counter;
+  list-style-type: none;
+  margin: 1em 0 2em;
+  padding: .2em;
+
+  > li {
+    counter-increment: circle-counter;
+
+    &::before {
+      @include govuk-font($size: 14, $weight: bold);
+
+      background-color: govuk-colour('black');
+      border-radius: 50%;
+      color: govuk-colour('white');
+      content: counter(circle-counter);
+      display: inline-block;
+      line-height: 1.4rem;
+      margin: .2em .5em 0 0;
+      text-align: center;
+      width: 1.4em;
+    }
+
+    > p {
+      display: inline-block;
+      margin-bottom: .2em;
+    }
+  }
+}
