@@ -38,6 +38,12 @@ $E
 
 ### Acronyms
 
+The head of the FCO is the Secretary of State for Foreign and Commonwealth
+Affairs, commonly abbreviated to "Foreign Secretary". This is regarded as one
+of the four most prestigious positions in the Cabinet – the Great Offices of
+State – alongside those of Prime Minister, Chancellor of the Exchequer and Home
+Secretary.
+
 *[FCO]: Foreign and Commonwealth Office
 
 ### Contact information
