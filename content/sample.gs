@@ -84,6 +84,14 @@ $I
 This is information
 $I
 
+### Advisory
+
+@This is a very important message or warning@
+
+{::highlight-answer}
+The VAT rate is *20%*
+{:/highlight-answer}
+
 ### Additional information
 
 $AI
