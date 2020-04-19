@@ -128,12 +128,3 @@ $LegislativeList
     * 3. Item 3
 $EndLegislativeList
 (to indent, add 2 spaces)
-
-### Priority lists
-
-$PriorityList:3
-  - Item 1
-  - Item 2
-  - Item 3
-  - Item 4
-  - Item 5
