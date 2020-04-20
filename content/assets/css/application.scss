@@ -257,7 +257,10 @@ main {
   @include remove-last-child-margin;
 
   padding: 1em 2em;
-  width: max-content;
+
+  @include govuk-media-query($from: tablet) {
+    width: max-content;
+  }
 }
 
 .steps {
