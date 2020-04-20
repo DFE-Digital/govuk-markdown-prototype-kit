@@ -33,7 +33,7 @@ $D
 ### Example callouts
 
 $E
-**Example** Open the pod bay doors.
+Open the pod bay doors.
 $E
 
 ### Acronyms
