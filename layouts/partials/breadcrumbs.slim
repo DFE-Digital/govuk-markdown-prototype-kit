@@ -5,7 +5,7 @@
       - breadcrumbs_trail.each do |ancestor|
         li.govuk-breadcrumbs__list-item
           - if ancestor
-            - if ancestor[:name]
+            - if ancestor[:title]
               == link_to_unless_current(ancestor[:title],         \
                   ancestor.path, class: 'govuk-breadcrumbs__link' \
                 ).html_safe
