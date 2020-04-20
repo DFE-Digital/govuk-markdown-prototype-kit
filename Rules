@@ -26,12 +26,12 @@ end
 
 # only compile application.scss, everything we need will
 # be @included from there
-compile '/css/application.scss' do
-  filter :sassc, syntax: :scss, style: :compact, load_paths: %w(content/css/)
+compile '/assets/css/application.scss' do
+  filter :sassc, syntax: :scss, style: :compact, load_paths: %w(content/assets/css/)
   snapshot :css
   write '/css/application.css'
 end
-ignore '/css/**/*.scss'
+ignore '/assets/css/**/*'
 
 compile '/**/*' do
   write item.identifier.to_s
