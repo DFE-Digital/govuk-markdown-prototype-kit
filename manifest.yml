@@ -1,0 +1,7 @@
+---
+applications:
+- name: govspeak-prototype
+  memory: 64M
+  buildpacks:
+    - https://github.com/cloudfoundry/staticfile-buildpack
+  root: output
