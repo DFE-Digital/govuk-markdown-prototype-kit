@@ -35,6 +35,13 @@ Navigate to `http://localhost:3000` and if you see this, it worked!
 
 ![home page](docs/sample.png)
 
+## Publishing content
+
+Providing you have a  [GOV.UK PaaS](https://www.cloud.service.gov.uk/) and have
+been allocated a space, this prototype is ready to publish. We just need to
+give the app a name (see `manifest.yml`), log in (`cf login`) and push (`cf
+push`).
+
 ## Adding content
 
 To add a new page create a `.gs` file in the `content` directory,
