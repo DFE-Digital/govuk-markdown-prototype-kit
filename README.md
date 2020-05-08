@@ -42,6 +42,10 @@ been allocated a space, this prototype is ready to publish. We just need to
 give the app a name (see `manifest.yml`), log in (`cf login`) and push (`cf
 push`).
 
+If you want your prototype to be protected by [Basic authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
+you need to add a `Staticfile.auth`. CloudFoundry's documentation covers the process in
+[plenty of detail](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html#basic-authentication).
+
 ## Adding content
 
 To add a new page create a `.gs` file in the `content` directory,
