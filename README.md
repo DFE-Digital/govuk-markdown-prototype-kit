@@ -92,3 +92,14 @@ subsequent headings should be `<h2>`-`<h6>`.
 
 The default styling for additional `<h1>` tags is intentionally ugly to
 discourage their use.
+
+## Contributing
+
+Contributions are always welcome. If you're able to, raising a PR is the
+preferred method. If we've missed something or you have a suggestion for
+a new feature suggest it in a GitHub issue.
+
+## Support
+
+If something isn't working or doesn't make sense you can ask a question via a
+GitHub issue. For more general framework support see [Nanoc's official documentation](https://nanoc.ws/about/).
