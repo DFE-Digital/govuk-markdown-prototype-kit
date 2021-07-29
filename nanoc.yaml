@@ -3,7 +3,7 @@
 # will be considered as binary.
 text_extensions:
   - css
-  - gs
+  - md
   - html
   - scss
   - slim

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-compile '/index.gs' do
+compile '/index.md' do
   filter :govspeak
   layout '/default.*'
   write '/index.html'
@@ -12,7 +12,7 @@ compile '/**/*.slim' do
   write item.identifier.without_ext + '/index.html'
 end
 
-compile '/**/*.gs' do
+compile '/**/*.md' do
   filter :govspeak
   layout '/default.*'
   write item.identifier.without_ext + '/index.html'

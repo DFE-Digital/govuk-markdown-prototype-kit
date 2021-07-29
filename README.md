@@ -48,8 +48,8 @@ you need to add a `Staticfile.auth`. CloudFoundry's documentation covers the pro
 
 ## Adding content
 
-To add a new page create a `.gs` file in the `content` directory,
-`content/example.gs` for example. The page will now be visible at
+To add a new page create a `.md` file in the `content` directory,
+`content/example.md` for example. The page will now be visible at
 `http://localhost:3000/example`.
 
 For consistency, keep your filenames lower case, avoid non-alphanumeric characters and use
