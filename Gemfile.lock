@@ -199,7 +199,7 @@ GEM
       nanoc-cli (~> 4.11, >= 4.11.14)
       nanoc-core (~> 4.11, >= 4.11.14)
     nio4r (2.5.8)
-    nokogiri (1.11.7-x86_64-linux)
+    nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
