@@ -14,6 +14,7 @@ gem "pry-byebug"
 gem "rubocop-govuk"
 gem "slim_lint"
 gem "sassc"
+gem "webrick"
 
 group :nanoc do
   gem "nanoc-live"
