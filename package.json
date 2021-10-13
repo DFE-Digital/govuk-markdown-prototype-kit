@@ -17,6 +17,6 @@
   "author": "Peter Yates",
   "license": "MIT",
   "dependencies": {
-    "govuk-frontend": "^3.13.0"
+    "govuk-frontend": "^3.14.0"
   }
 }
