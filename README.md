@@ -67,19 +67,19 @@ title: "My amazing page"
 ---
 ```
 
-View the included index file `content/index.gs` for an example of using
+View the included index file `content/index.md` for an example of using
 metadata in a govspeak template.
 
 ### Nesting pages
 
 A hierarchy of content can be created using directories. Each directory should have
-a corresponding index, so the `hello/` directory should be placed alongside `hello.gs`.
+a corresponding index, so the `hello/` directory should be placed alongside `hello.md`.
 
 | File                                | Path                                           |
 | ----                                | ----                                           |
-| `content/hello.gs`                  | `http://localhost:3000/hello`                  |
-| `content/hello/world.gs`            | `http://localhost:3000/hello/world`            |
-| `content/hello/nice-to-meet-you.gs` | `http://localhost:3000/hello/nice-to-meet-you` |
+| `content/hello.md`                  | `http://localhost:3000/hello`                  |
+| `content/hello/world.md`            | `http://localhost:3000/hello/world`            |
+| `content/hello/nice-to-meet-you.md` | `http://localhost:3000/hello/nice-to-meet-you` |
 
 Routing and breadcrumbs are automatically handled.
 
