@@ -37,6 +37,8 @@ Navigate to `http://localhost:3000` and if you see this, it worked!
 
 ## Publishing content
 
+### GOV.UK PaaS
+
 Providing you have a  [GOV.UK PaaS](https://www.cloud.service.gov.uk/) and have
 been allocated a space, this prototype is ready to publish. We just need to
 give the app a name (see `manifest.yml`), log in (`cf login`) and push (`cf
@@ -45,6 +47,21 @@ push`).
 If you want your prototype to be protected by [Basic authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
 you need to add a `Staticfile.auth`. CloudFoundry's documentation covers the process in
 [plenty of detail](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html#basic-authentication).
+
+### Netlify
+
+Netlify is the easiest way to publish your content on the web and its integration
+with GitHub is preconfigured - all you need to do is sign up for Netlify, [connect your
+GitHub account](https://docs.netlify.com/configure-builds/repo-permissions-linking/),
+click the ['New site from Git'](https://explorers.netlify.com/learn/split-testing-with-netlify/creating-a-new-netlify-site-with-a-git-repo) button, pick your repository and configure these settings:
+
+* **Build command:** `bundle exec nanoc`
+* **Publish directory:** `output`
+
+After a minute or two your site will be live! The URL will be displayed
+at the top of the page in the Netlify admin panel and you can change
+the randomly-generated identifier to something a bit more user-friendly
+by going into the 'Site details' settings and clicking 'Change site name'.
 
 ## Adding content
 
