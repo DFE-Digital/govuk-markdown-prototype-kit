@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 compile '/index.md' do
-  filter :govspeak
+  filter :govuk_markdown
   layout '/default.*'
   write '/index.html'
 end
@@ -13,7 +13,7 @@ compile '/**/*.slim' do
 end
 
 compile '/**/*.md' do
-  filter :govspeak
+  filter :govuk_markdown
   layout '/default.*'
   write item.identifier.without_ext + '/index.html'
 end

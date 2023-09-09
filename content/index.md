@@ -2,7 +2,7 @@
 title: Index
 ---
 
-## Hello from Govspeak 🎉
+## Hello from GOV.UK Markdown 🎉
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut **labore et dolore magna aliqua**. Fermentum dui faucibus in ornare

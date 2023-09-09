@@ -1,16 +1,14 @@
-# Govspeak Prototype
+# GOV.UK markdown prototype kit
 
 This is a minimal prototype kit aimed at testing and researching content that's
 intended to be published via the [Whitehall Publisher](https://www.gov.uk/guidance/how-to-publish-on-gov-uk).
 
 It uses [Nanoc](https://nanoc.ws/), a static site generator written in Ruby.
 
-## What is govspeak?
+## What is govuk_markdown?
 
-[Govspeak](https://github.com/alphagov/govspeak) is a simplified 'markup'
-language based on [Markdown](https://commonmark.org/). It's designed to be as
-[easy-to-read and easy-to-write](https://govspeak-preview.herokuapp.com/guide)
-as possible.
+[govuk_markdown](https://github.com/DFE-Digital/govuk-markdown) is a markdown renderer that supports a subset of the GOV.UK
+Design System's text formatting options, namely [inset text](https://design-system.service.gov.uk/components/inset-text/) and [details](https://design-system.service.gov.uk/components/details/).
 
 ## Requirements
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/#homebrew)
@@ -85,7 +83,7 @@ title: "My amazing page"
 ```
 
 View the included index file `content/index.md` for an example of using
-metadata in a govspeak template.
+metadata in a template.
 
 ### Nesting pages
 
@@ -102,7 +100,7 @@ Routing and breadcrumbs are automatically handled.
 
 ### Level one headings (or lack thereof)
 
-Govspeak [does not support level one
+This kit [does not support level one
 headings](https://govspeak-preview.herokuapp.com/guide#Headings) by choice. The
 document's title will be displayed in a `<h1>` tag at the top of the page, all
 subsequent headings should be `<h2>`-`<h6>`.
